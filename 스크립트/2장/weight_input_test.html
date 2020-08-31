@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title> 적정 몸무게 구하기 </title>
+<script>
+    var name = prompt("이름:"," ");
+    var height = prompt("키:","0");
+    var weight = prompt("몸무제:","0");
+
+    var normal_w = (height-100)*0.9;
+    var result = weight>=normal_w-5 && weight<=normal_w+5;
+    result = result? "적정체중":"부적정체중";
+    document.write(name + "님은" + result +" 입니다");
+
+</script>
+</head>
+<body>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset = "UTF-8">
+<title> 함수 </title>
+<script>
+	var count = 0;
+	myfun();
+
+	function myfun(){//정상적인 함수호출 방법
+		count++;
+		document.write("hello" + count,"<br>");
+	}
+	myFun();
+	 
+	var theFun = function(){//익명의 함수호출 방법
+		count++;
+		document.write("bye"+ count,"<br>");
+	} 
+	
+	theFun();
+
+</script>
+</head>
+<body>
+</body>
+</html>

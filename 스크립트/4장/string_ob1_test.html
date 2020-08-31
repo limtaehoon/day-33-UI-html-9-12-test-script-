@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset = "UTF-8">
+<title> 문자 객체 </title>
+<script>
+	var str = "Hello Thank you good luck to you";
+
+	document.write(str.charAt(16),"<br>");//인뎃스에 해당하는 문자 불러오기
+
+	document.write(str.match("luck"),"<br>");
+
+	document.write(str.replace("you","me"),"<br>");
+
+	document.write(str.toUpperCase(),"<br>");
+
+	var t= str.split(" "); //공백을 기준으로 나누어서 단어 출력
+	
+	document.write(t[2]);
+
+</script>
+</head>
+<body>
+</body>
+</html>

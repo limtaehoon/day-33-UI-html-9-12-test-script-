@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset = "UTF-8">
+<title> 수학객체 </title>
+<script>
+	document.write("<h1>컴퓨터 가위, 바위, 보 맞추기</h1>");
+	var game = prompt("가위,바위,보 중에 선택","가위");
+	var gameNum;
+	switch (game) {
+		case "가위" : gameNum = 1; break;
+		case "바위" : gameNum = 2; break; 
+		case "보"	: gameNum =3; break;
+		default: alert("잘못입력");
+		location.reload();
+	}
+		
+		var com = Math.ceil(Math.random()*3);
+		document.write("<img src=\"images/math_img_"+com+".jpg\">");
+
+		
+		if(com==(1)){
+			document.write("<h2>비겼습니다</h2>");
+		}else if(com ==(2)){
+			document.write("<h2>졌습니다</h2>");
+		}else{
+			document.write("<h2>이겼습니다</h2>");
+		}
+		
+</script>
+</head>
+<body>
+</body>
+</html>

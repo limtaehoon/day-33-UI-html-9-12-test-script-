@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset = "UTF-8">
+	<title> 날짜 정보 객체 </title>
+	<script>
+		var today =new Date();
+		var nowMonth = today.getMonth();//현재 월
+		nowDate = today.getDate();//현재 날짜 
+		nowDay = today.getDay();//현재 요일
+		
+		document.write("<h1>오늘 날짜 정보</h1>");
+		document.write("현재 월 :" + (nowMonth+1), "<br>");
+		document.write("현재 일 :" + nowDate, "<br>");
+		document.write("현재 요일 :" + nowDay, "<br>");
+
+		switch( nowDay){
+			case 1 : document.write("일");
+			case 2 : document.write("월");
+			case 3 : document.write("화");
+			case 4 : document.write("수");
+			case 5 : document.write("목");
+			case 6 : document.write("금");
+			case 7 : document.write("토");
+		}
+	</script>
+</head>
+<body>
+</body>
+</html>
